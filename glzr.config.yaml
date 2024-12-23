@@ -146,6 +146,12 @@ window_rules:
         window_title: { regex: '.*? - Peek' }
       - window_process: { equals: 'Lively' }
         window_class: { regex: 'HwndWrapper' }
+      - window_process: { equals: 'VirtualBox' }
+        window_class: { equals: 'Qt653QWindowIcon' }
+      - window_process: { equals: 'VirtualBoxVM' }
+      - window_process: { equals: 'SnippingTool' }
+      - window_process: { equals: 'IDMan'}
+      
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
@@ -230,7 +236,7 @@ keybindings:
 
   # Change the focused window to be floating.
   - commands: ['toggle-floating --centered']
-    bindings: ['alt+shift+space']
+    bindings: ['ctrl+shift+z']
 
   # Change the focused window to be tiling.
   - commands: ['toggle-tiling']
@@ -238,7 +244,7 @@ keybindings:
 
   # Change the focused window to be fullscreen.
   - commands: ['toggle-fullscreen']
-    bindings: ['alt+f']
+    bindings: ['alt+q']
 
   # Minimize focused window.
   - commands: ['toggle-minimized']
@@ -254,7 +260,7 @@ keybindings:
 
   # Re-evaluate configuration file.
   - commands: ['wm-reload-config']
-    bindings: ['alt+shift+r']
+    bindings: ['ctrl+shift+r']
 
   # Redraw all windows.
   - commands: ['wm-redraw']
