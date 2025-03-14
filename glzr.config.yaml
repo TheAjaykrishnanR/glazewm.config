@@ -152,11 +152,16 @@ window_rules:
       - window_process: { equals: 'SnippingTool' }
       - window_process: { equals: 'IDMan'}
 
+  # 1366 x 768 the holy resolution
+  # Open File Explorer as floating and centred with fixed width and height
   - commands: ["set-floating --centered --width=800 --height=600"]
     match:
-      # Open File Explorer as floating
-      - window_title: { equals: 'Home - File Explorer'}
-      
+      - window_title: { regex: 'File Explorer'}
+  
+  # Mozilla library window start floating
+  - commands: ["set-floating --centered --width=800 --height=600"]
+    match:
+      - window_title: { equals: 'Library'}
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
