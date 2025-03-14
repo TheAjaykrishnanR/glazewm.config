@@ -157,6 +157,7 @@ window_rules:
   - commands: ["set-floating --centered --width=800 --height=600"]
     match:
       - window_title: { regex: 'File Explorer'}
+      - window_process: { equals: 'al'}
   
   # Mozilla library window start floating
   - commands: ["set-floating --centered --width=800 --height=600"]
