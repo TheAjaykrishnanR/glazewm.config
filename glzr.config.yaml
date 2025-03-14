@@ -151,6 +151,11 @@ window_rules:
       - window_process: { equals: 'VirtualBoxVM' }
       - window_process: { equals: 'SnippingTool' }
       - window_process: { equals: 'IDMan'}
+
+  - commands: ["set-floating"]
+    match:
+      # Open File Explorer as floating
+      - window_title: { equals: 'Home - File Explorer'}
       
 
 binding_modes:
@@ -181,10 +186,14 @@ keybindings:
   # Custom Programs / Launcher
   - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\alacritty\\al.exe"]
     bindings: ["alt+x"]
+  - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\alacritty\\al.exe"]
+    bindings: ["ctrl+;+'"]
   - commands: ["shell-exec C:\\Windows\\explorer.exe"]
     bindings: ["ctrl+alt+a"]
-  - commands: ["shell-exec C:\\Windows\\System32\\Taskmgr.exe"]
+  - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\process explorer\\procexp64.exe"]
     bindings: ["alt+n+m"]
+  - commands: ["shell-exec psshutdown -h -t 0"]
+    bindings: ["ctrl+,+."]
   # Shift focus in a given direction.
   - commands: ['focus --direction left']
     bindings: ['ctrl+h']
