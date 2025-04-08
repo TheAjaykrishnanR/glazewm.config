@@ -150,20 +150,33 @@ window_rules:
         window_class: { equals: 'Qt653QWindowIcon' }
       - window_process: { equals: 'VirtualBoxVM' }
       - window_process: { equals: 'SnippingTool' }
-      - window_process: { equals: 'IDMan'}
 
   # 1366 x 768 the holy resolution
-  # Open File Explorer as floating and centred with fixed width and height
-  - commands: ["set-floating --centered --width=800 --height=600"]
+  # Open File Explorer and al as floating and centred with fixed width and height
+  - commands: ["set-floating --centered --width=845 --height=455"]
     match:
       - window_title: { regex: 'File Explorer'}
       - window_process: { equals: 'al'}
+      - window_process: { equals: 'wezterm-gui'}
+
+  # neovide
+  - commands: ["set-floating --centered"]
+    match:
+      - window_process: { equals: 'neovide'}
   
   # Mozilla library window start floating
   - commands: ["set-floating --centered --width=800 --height=600"]
     match:
       - window_title: { equals: 'Library'}
 
+  - commands: ["set-floating --centered"]
+    match:
+      - window_process: { equals: 'IDMan'}
+
+  - commands: ['ignore']
+    match:
+      - window_process: { equals: 'Microsoft.Notes' }
+      
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
   - name: 'resize'
@@ -192,12 +205,14 @@ keybindings:
   # Custom Programs / Launcher
   - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\alacritty\\al.exe"]
     bindings: ["alt+x"]
-  - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\alacritty\\al.exe"]
+  - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\wezterm\\wezterm-gui.exe"]
     bindings: ["ctrl+;+'"]
   - commands: ["shell-exec C:\\Windows\\explorer.exe"]
     bindings: ["ctrl+alt+a"]
   - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\process explorer\\procexp64.exe"]
     bindings: ["alt+n+m"]
+  - commands: ["shell-exec C:\\Windows\\System32\\Taskmgr.exe"]
+    bindings: ["ctrl+alt+n+m"]
   - commands: ["shell-exec psshutdown -h -t 0"]
     bindings: ["ctrl+,+."]
   # Shift focus in a given direction.
@@ -289,9 +304,9 @@ keybindings:
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ['focus --next-workspace']
-    bindings: ['ctrl+shift+l']
+    bindings: ['ctrl+shift+l', 'ctrl+left']
   - commands: ['focus --prev-workspace']
-    bindings: ['ctrl+shift+h']
+    bindings: ['ctrl+shift+h', 'ctrl+right']
 
   # Focus the workspace that last had focus.
   - commands: ['focus --recent-workspace']
