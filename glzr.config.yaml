@@ -150,6 +150,7 @@ window_rules:
         window_class: { equals: 'Qt653QWindowIcon' }
       - window_process: { equals: 'VirtualBoxVM' }
       - window_process: { equals: 'SnippingTool' }
+      - window_title: { regex: 'Paint' }
 
   # 1366 x 768 the holy resolution
   # Open File Explorer and al as floating and centred with fixed width and height
@@ -305,9 +306,9 @@ keybindings:
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ['focus --next-workspace']
-    bindings: ['ctrl+shift+l', 'ctrl+left']
+    bindings: ['ctrl+shift+l', 'ctrl+right']
   - commands: ['focus --prev-workspace']
-    bindings: ['ctrl+shift+h', 'ctrl+right']
+    bindings: ['ctrl+shift+h', 'ctrl+left']
 
   # Focus the workspace that last had focus.
   - commands: ['focus --recent-workspace']
