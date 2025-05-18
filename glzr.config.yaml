@@ -161,6 +161,12 @@ window_rules:
       - window_process: { equals: 'wezterm-gui'}
       - window_title: { regex: 'wez'}
 
+  # OnePhotoViewerPro
+  - commands: ["set-floating --centered --width=810 --height=455"]
+    match:
+      - window_process: { equals: 'One Photo Viewer'}
+      
+
   # neovide
   - commands: ["set-floating --centered"]
     match:
