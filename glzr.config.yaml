@@ -57,7 +57,7 @@ window_effects:
     # Highlight the window with a colored border.
     # ** Exclusive to Windows 11 due to API limitations.
     border:
-      enabled: true
+      enabled: false
       color: '#8dbcff'
 
     # Remove the title bar from the window's frame. Note that this can
@@ -75,7 +75,7 @@ window_effects:
   # Visual effects to apply to non-focused windows.
   other_windows:
     border:
-      enabled: true
+      enabled: false
       color: '#a1a1a1'
     hide_title_bar:
       enabled: false
@@ -158,6 +158,7 @@ window_rules:
     match:
       - window_title: { regex: 'File Explorer'}
       - window_process: { equals: 'al'}
+      - window_process: { equals: 'WindowsTerminal'}
       - window_process: { equals: 'wezterm-gui'}
       - window_title: { regex: 'wez'}
 
@@ -213,7 +214,7 @@ keybindings:
   # Custom Programs / Launcher
   - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\alacritty\\al.exe"]
     bindings: ["alt+x"]
-  - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\wezterm\\wezterm-gui.exe"]
+  - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\terminal\\wt.exe"]
     bindings: ["ctrl+;+'"]
   - commands: ["shell-exec C:\\Windows\\explorer.exe"]
     bindings: ["ctrl+alt+a"]
@@ -221,8 +222,6 @@ keybindings:
     bindings: ["alt+n+m"]
   - commands: ["shell-exec C:\\Windows\\System32\\Taskmgr.exe"]
     bindings: ["ctrl+alt+n+m"]
-  - commands: ["shell-exec psshutdown -h -t 0"]
-    bindings: ["ctrl+,+."]
   # Shift focus in a given direction.
   - commands: ['focus --direction left']
     bindings: ['ctrl+h']
