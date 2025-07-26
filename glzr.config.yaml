@@ -219,7 +219,7 @@ keybindings:
     bindings: ["ctrl+;+'"]
   #- commands: ["shell-exec C:\\Windows\\explorer.exe"]
   #  bindings: ["ctrl+alt+a"]
-  - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\FPilot.exe"]
+  - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\FilePilot\\FPilot.exe"]
     bindings: ["ctrl+alt+a"]
   - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\process explorer\\procexp64.exe"]
     bindings: ["alt+n+m"]
