@@ -161,6 +161,7 @@ window_rules:
       - window_process: { equals: 'WindowsTerminal'}
       - window_process: { equals: 'wezterm-gui'}
       - window_title: { regex: 'wez'}
+      - window_process: { equals: 'FPilot' }
 
   # OnePhotoViewerPro
   - commands: ["set-floating --centered --width=810 --height=455"]
@@ -216,7 +217,9 @@ keybindings:
     bindings: ["alt+x"]
   - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\terminal\\wt.exe"]
     bindings: ["ctrl+;+'"]
-  - commands: ["shell-exec C:\\Windows\\explorer.exe"]
+  #- commands: ["shell-exec C:\\Windows\\explorer.exe"]
+  #  bindings: ["ctrl+alt+a"]
+  - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\FPilot.exe"]
     bindings: ["ctrl+alt+a"]
   - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\process explorer\\procexp64.exe"]
     bindings: ["alt+n+m"]
@@ -227,10 +230,10 @@ keybindings:
     bindings: ['ctrl+h']
   - commands: ['focus --direction right']
     bindings: ['ctrl+l']
-  - commands: ['focus --direction up']
-    bindings: ['ctrl+k']
-  - commands: ['focus --direction down']
-    bindings: ['ctrl+j']
+  #- commands: ['focus --direction up']
+  #  bindings: ['ctrl+k']
+  #- commands: ['focus --direction down']
+  #  bindings: ['ctrl+j']
 
   # Move focused window in a given direction.
   - commands: ['move --direction left']
