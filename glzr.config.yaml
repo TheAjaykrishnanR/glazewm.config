@@ -162,6 +162,7 @@ window_rules:
       - window_process: { equals: 'wezterm-gui'}
       - window_title: { regex: 'wez'}
       - window_process: { equals: 'FPilot' }
+      - window_process: { regex: 'devenv' }
 
   # OnePhotoViewerPro
   - commands: ["set-floating --centered --width=810 --height=455"]
@@ -217,10 +218,10 @@ keybindings:
     bindings: ["alt+x"]
   - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\terminal\\wt.exe"]
     bindings: ["ctrl+;+'"]
-  #- commands: ["shell-exec C:\\Windows\\explorer.exe"]
-  #  bindings: ["ctrl+alt+a"]
-  - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\FilePilot\\FPilot.exe"]
+  - commands: ["shell-exec C:\\Windows\\explorer.exe"]
     bindings: ["ctrl+alt+a"]
+  #- commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\FilePilot\\FPilot.exe"]
+  #  bindings: ["ctrl+alt+a"]
   - commands: ["shell-exec C:\\Users\\Jayakuttan\\Programs\\process explorer\\procexp64.exe"]
     bindings: ["alt+n+m"]
   - commands: ["shell-exec C:\\Windows\\System32\\Taskmgr.exe"]
