@@ -164,6 +164,7 @@ window_rules:
       - window_process: { equals: 'FPilot' }
       - window_process: { regex: 'devenv' }
       - window_process: { regex: 'procexp' }
+      - window_process: { regex: 'LINQPad8-x64' }
 
   # OnePhotoViewerPro
   - commands: ["set-floating --centered --width=810 --height=455"]
