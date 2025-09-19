@@ -1,0 +1,26 @@
+[2m2024-10-19T20:12:37.064163Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-10-19T20:12:40.633815Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-19T22:46:21.385251Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[0]: missing field `commands` at line 155 column 5
+[2m2024-10-19T22:46:48.973584Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[0].commands: invalid type: string "exec C:\\Users\\Programs\\alacritty\\al.exe", expected a sequence at line 155 column 15
+[2m2024-10-19T22:47:13.703168Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[0].commands: unrecognized subcommand
+ at line 155 column 15
+[2m2024-10-19T22:47:36.664360Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[0].commands: unrecognized subcommand
+ at line 155 column 15
+[2m2024-10-19T22:50:22.008438Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'C:\\Users\\Programs\\alacritty\\al.exe'.\n\nError: Program path is not valid for command 'C:\\Users\\Programs\\alacritty\\al.exe'."
+[2m2024-10-19T22:50:47.265506Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'C:\\Users\\Programs\\alacritty\\al.exe'.\n\nError: Program path is not valid for command 'C:\\Users\\Programs\\alacritty\\al.exe'."
+[2m2024-10-20T01:05:29.084888Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-21T04:56:27.234296Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-21T04:56:53.780137Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-23T02:07:59.095340Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-23T02:15:58.797533Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-23T03:07:16.111548Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-23T03:20:59.606454Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-23T03:23:21.942034Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-23T03:40:59.568031Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: unexpected argument found
+ at line 5 column 21
+[2m2024-10-23T04:11:12.143264Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[55].commands: unexpected argument found
+ at line 327 column 15
+[2m2025-04-17T10:03:20.062203Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-05-29T17:13:53.778464Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Program path is not valid for command 'C:\Users\Jayakuttan\Programs\terminal\wt.exe'.
+[2m2025-08-27T00:50:16.947503Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-09-11T02:40:09.084706Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
