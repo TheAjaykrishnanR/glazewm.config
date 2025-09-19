@@ -1,6 +1,6 @@
 ## Setup
 
-Place `glzr.config.yaml` as `config.yaml` in `C:\Users\<username>\.glzr\glazewm`
+Place `config.yaml` as `config.yaml` in `C:\Users\<username>\.glzr\glazewm`
 
 9 Workspaces initialized at startup
 
